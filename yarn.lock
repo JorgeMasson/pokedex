@@ -2054,6 +2054,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4.14.178":
+  version: 4.14.178
+  resolution: "@types/lodash@npm:4.14.178"
+  checksum: a69a04a60bfc5257c3130a554b4efa0c383f0141b7b3db8ab7cf07ad2a46ea085fce66d0242da41da7e5647b133d5dfb2c15add9cbed8d7fef955e4a1e5b3128
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 17.0.12
   resolution: "@types/node@npm:17.0.12"
@@ -3578,7 +3585,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-constants@npm:~13.0.0":
+"expo-constants@npm:~13.0.0, expo-constants@npm:~13.0.1":
   version: 13.0.1
   resolution: "expo-constants@npm:13.0.1"
   dependencies:
@@ -5077,7 +5084,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.14, lodash@npm:^4.17.15":
+"lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -6269,11 +6276,14 @@ __metadata:
     "@react-navigation/bottom-tabs": ^6.0.9
     "@react-navigation/native": ^6.0.6
     "@react-navigation/native-stack": ^6.2.5
+    "@types/lodash": ^4.14.178
     "@types/react": ~17.0.21
     "@types/react-native": ~0.64.12
     "@types/react-native-vector-icons": ^6.4.10
     expo: ~44.0.0
+    expo-constants: ~13.0.1
     expo-status-bar: ~1.2.0
+    lodash: ^4.17.21
     react: 17.0.1
     react-dom: 17.0.1
     react-native: 0.64.3

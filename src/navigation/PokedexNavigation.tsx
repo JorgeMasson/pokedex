@@ -7,17 +7,26 @@ const Stack = createNativeStackNavigator();
 
 export default function FavoriteNavigation() {
     return (
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Navigator screenOptions={{ headerShown: false, headerTransparent: true }}>
             <Stack.Screen
                 name="Pokedex Screen"
                 component={PokedexScreen}
                 options={{
                     title: '',
                     headerTransparent: true,
-                    headerShown: false
+                    headerShown: false,
                 }}
             />
-            <Stack.Screen name="Pokemon Screen" component={PokemonScreen} />
+            <Stack.Screen
+                name="Pokemon"
+                component={PokemonScreen}
+                options={{
+                    title: '',
+                    headerTransparent: true,
+                    headerShown: true,
+                    headerShadowVisible: false,
+                }}
+            />
         </Stack.Navigator>
     );
 }
