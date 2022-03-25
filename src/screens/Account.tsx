@@ -4,7 +4,7 @@ import LoginForm from '../components/Auth/LoginForm';
 import UserData from '../components/Auth/UserData';
 
 export default function Account() {
-    const auth = {};
+    const auth = null;
 
 
     return (
