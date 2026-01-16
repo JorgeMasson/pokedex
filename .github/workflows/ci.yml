@@ -5,11 +5,20 @@ on:
     branches: [master]
 
 jobs:
-  prueba:
+  node-ci:
     runs-on: ubuntu-latest
-    steps:
-      - name: Paso que funciona
-        run: echo "Este paso sí funciona"
 
-      - name: Paso que falla
-        run: exit 1
+    steps:
+      - name: Clonar repo
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: action/setup@nodev4
+        with:
+          node-version: 18
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Correr tests
+        run: npm test
