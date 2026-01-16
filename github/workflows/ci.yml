@@ -2,7 +2,7 @@ name: Mi primer CI
 
 on:
   push:
-    branches: [ci-cd-test]
+    branches: [master]
 
 jobs:
   saludo:
