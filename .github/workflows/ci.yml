@@ -5,8 +5,11 @@ on:
     branches: [master]
 
 jobs:
-  saludo:
+  prueba:
     runs-on: ubuntu-latest
     steps:
-      - name: Decir hola
-        run: echo "Hola, esto lo ejecuta CI"
+      - name: Paso que funciona
+        run: echo "Este paso sí funciona"
+
+      - name: Paso que falla
+        run: exit 1
