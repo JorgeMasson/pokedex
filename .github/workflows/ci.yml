@@ -1,0 +1,12 @@
+name: Mi primer CI
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Decir hola
+        run: echo "Hola, esto lo ejecuta CI"
