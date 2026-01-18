@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "echo \"Corriendo tests desde CI\"",
-    "lint": "eslint ."
+    "lint": "exit 1"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
