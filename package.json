@@ -8,7 +8,8 @@
     "ios": "set NODE_OPTIONS=--openssl-legacy-provider && expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "echo \"Corriendo tests desde CI\""
+    "test": "echo \"Corriendo tests desde CI\"",
+    "lint": "exit 1"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

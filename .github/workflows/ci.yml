@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  js-ci:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint || echo "No lint script yet"
+      - name: Run lint
+        run: npm run lint
 
       - name: Run tests
         run: npm test
+
+      - name: Expo prebuild check
+        run: npx expo prebuild --no-install --platform web
