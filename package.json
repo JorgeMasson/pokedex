@@ -36,7 +36,11 @@
     "@types/react": "~19.1.10",
     "@types/react-native": "~0.64.12",
     "@types/react-native-vector-icons": "^6.4.10",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
     "eslint": "^9.39.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "typescript": "~5.9.2"
   },
   "private": true
